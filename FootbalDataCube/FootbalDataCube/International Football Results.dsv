@@ -1,0 +1,217 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="42ed26e1-99d2-4507-844d-5098869f1722" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>International Football Results</ID>
+  <Name>International Football Results</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>International Football Results</DataSourceID>
+  <Schema>
+    <xs:schema id="International_x0020_Football_x0020_Results" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="International_x0020_Football_x0020_Results" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="fa193a68-2b15-405f-8669-6acaaddf1101">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_dates" msprop:design-time-name="01bbf272-8396-4d1f-898f-591373a6f037" msprop:DbTableName="dates" msprop:FriendlyName="dates" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="date_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="afaeb685-b582-426e-9ff0-cd320f840c66" msprop:DbColumnName="date_id" msprop:FriendlyName="date_id" type="xs:int" />
+                  <xs:element name="year" msprop:design-time-name="43614271-1037-4bf3-840c-9a518b978374" msprop:DbColumnName="year" msprop:FriendlyName="year" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="month" msprop:design-time-name="51ad2526-f32b-437a-9b63-a952d999cdbb" msprop:DbColumnName="month" msprop:FriendlyName="month" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="day" msprop:design-time-name="2b4328d3-39b0-4edd-b657-8c8b20465b75" msprop:DbColumnName="day" msprop:FriendlyName="day" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="date" msprop:design-time-name="413f5a59-d98f-41ed-b76b-f2327c211140" msprop:DbColumnName="date" msprop:FriendlyName="date" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactFootballTeamScore" msprop:design-time-name="ce7688bb-991d-4ee0-890b-a93142890d63" msprop:DbTableName="FactFootballTeamScore" msprop:FriendlyName="FactFootballTeamScore" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="99bf92cd-5978-4269-bde0-f0e2b6d7c9d4" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="football_location_id" msprop:design-time-name="56a51f8d-b7f9-443b-80ee-ce40c223a4b0" msprop:DbColumnName="football_location_id" msprop:FriendlyName="football_location_id" type="xs:int" />
+                  <xs:element name="date_id" msprop:design-time-name="a998c6a8-e4ae-4315-af74-b046cceedb56" msprop:DbColumnName="date_id" msprop:FriendlyName="date_id" type="xs:int" />
+                  <xs:element name="home_team_id" msprop:design-time-name="f2380ca2-1cca-4f9c-b8ef-6a8f456e1ae6" msprop:DbColumnName="home_team_id" msprop:FriendlyName="home_team_id" type="xs:int" />
+                  <xs:element name="away_team_id" msprop:design-time-name="66144985-b548-48e1-ad71-cdfa5b7804b5" msprop:DbColumnName="away_team_id" msprop:FriendlyName="away_team_id" type="xs:int" />
+                  <xs:element name="hometeam_score" msprop:design-time-name="b433c2c7-5816-46e1-9c4d-acf7a5590652" msprop:DbColumnName="hometeam_score" msprop:FriendlyName="hometeam_score" type="xs:int" minOccurs="0" />
+                  <xs:element name="awayteam_score" msprop:design-time-name="924113c1-9c1f-4388-ba66-860231af7cd3" msprop:DbColumnName="awayteam_score" msprop:FriendlyName="awayteam_score" type="xs:int" minOccurs="0" />
+                  <xs:element name="football_tournament_id" msprop:design-time-name="9547d0e1-b3da-4982-8e6e-e4199a728744" msprop:DbColumnName="football_tournament_id" msprop:FriendlyName="football_tournament_id" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_football_awayteam" msprop:design-time-name="a365af08-bad3-4b0b-a8a6-c07220ea6d27" msprop:DbTableName="football_awayteam" msprop:FriendlyName="football_awayteam" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="football_awayteam_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="80ef551b-bd66-49cb-b453-7a4238d8c10b" msprop:DbColumnName="football_awayteam_id" msprop:FriendlyName="football_awayteam_id" type="xs:int" />
+                  <xs:element name="football_awayteam_name" msprop:design-time-name="e0a9a517-05ad-4723-b78a-8ef7ad5e6dcd" msprop:DbColumnName="football_awayteam_name" msprop:FriendlyName="football_awayteam_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_football_hometeam" msprop:design-time-name="a25c4629-a6d6-4d65-bc4c-425aa0ee3f89" msprop:DbTableName="football_hometeam" msprop:FriendlyName="football_hometeam" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="football_hometeam_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8de78119-59a3-4d86-a622-cf1c50c6da9a" msprop:DbColumnName="football_hometeam_id" msprop:FriendlyName="football_hometeam_id" type="xs:int" />
+                  <xs:element name="football_hometeam_name" msprop:design-time-name="680ee839-e2b5-4487-aaca-b002f0c4ce56" msprop:DbColumnName="football_hometeam_name" msprop:FriendlyName="football_hometeam_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_football_location" msprop:design-time-name="d5e89162-941a-445d-95fc-c74d5a54c89a" msprop:DbTableName="football_location" msprop:FriendlyName="football_location" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="football_location_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="3ff6b3fa-23d3-479e-85a2-2587cb5423e8" msprop:DbColumnName="football_location_id" msprop:FriendlyName="football_location_id" type="xs:int" />
+                  <xs:element name="football_location_city" msprop:design-time-name="6ac63067-1ae9-4779-906a-604007abc89d" msprop:DbColumnName="football_location_city" msprop:FriendlyName="football_location_city" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="football_location_country" msprop:design-time-name="c4d442f1-bc0e-4de3-8617-88aeffc59a67" msprop:DbColumnName="football_location_country" msprop:FriendlyName="football_location_country" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="football_location" msprop:design-time-name="868da04f-0ca7-4c4c-9c8c-3e28ba7b1268" msprop:DbColumnName="football_location" msprop:FriendlyName="football_location" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_football_tournament" msprop:design-time-name="2da0a935-e8f4-4d65-b74c-0a29e15568ba" msprop:DbTableName="football_tournament" msprop:FriendlyName="football_tournament" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="football_tournament_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="acd4adc5-9218-47b9-99a6-efc4307e5668" msprop:DbColumnName="football_tournament_id" msprop:FriendlyName="football_tournament_id" type="xs:int" />
+                  <xs:element name="football_tournament" msprop:design-time-name="1e9f7b01-7408-477e-94cb-2cc4f8c6ab62" msprop:DbColumnName="football_tournament" msprop:FriendlyName="football_tournament" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dates" />
+          <xs:field xpath="date_id" />
+        </xs:unique>
+        <xs:unique name="dbo_FactFootballTeamScore_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactFootballTeamScore" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_football_awayteam_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_football_awayteam" />
+          <xs:field xpath="football_awayteam_id" />
+        </xs:unique>
+        <xs:unique name="dbo_football_hometeam_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_football_hometeam" />
+          <xs:field xpath="football_hometeam_id" />
+        </xs:unique>
+        <xs:unique name="dbo_football_location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_football_location" />
+          <xs:field xpath="football_location_id" />
+        </xs:unique>
+        <xs:unique name="dbo_football_tournament_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_football_tournament" />
+          <xs:field xpath="football_tournament_id" />
+        </xs:unique>
+        <xs:keyref name="FK_FactFootballTeamScore_football_location" refer="dbo_football_location_Constraint1">
+          <xs:selector xpath=".//dbo_FactFootballTeamScore" />
+          <xs:field xpath="football_location_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactFootballTeamScore_home_team" refer="dbo_football_hometeam_Constraint1">
+          <xs:selector xpath=".//dbo_FactFootballTeamScore" />
+          <xs:field xpath="home_team_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactFootballTeamScore_dates" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactFootballTeamScore" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactFootballTeamScore_away_team" refer="dbo_football_awayteam_Constraint1">
+          <xs:selector xpath=".//dbo_FactFootballTeamScore" />
+          <xs:field xpath="away_team_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactFootballTeamScore_football_tournament" refer="dbo_football_tournament_Constraint1">
+          <xs:selector xpath=".//dbo_FactFootballTeamScore" />
+          <xs:field xpath="football_tournament_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <International_x0020_Football_x0020_Results xmlns="" />
+  </Schema>
+</DataSourceView>

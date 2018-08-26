@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>FootbalDataCube</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>KobvmRGis/lrWCRPX9xNBn5Ky5c=8/4/2018 10:23:42 PM8/4/2018 10:23:00 PM</TimeStamp>
+        <ID>
+          <String>International Football Results</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>wTDfdTGBsMM2Wm1F0LgnfBYFLL8=8/4/2018 10:30:26 PM8/4/2018 10:30:25 PM</TimeStamp>
+        <ID>
+          <String>International Football Results</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2yH2WMI+hIoBxOQexPmvZpA+hGA=8/4/2018 10:37:02 PM8/4/2018 10:31:16 PM</TimeStamp>
+        <ID>
+          <String>Football Tournament</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CUKnbSWxp60SUiOHCLdCm6NlFFo=8/4/2018 10:37:02 PM8/4/2018 10:31:16 PM</TimeStamp>
+        <ID>
+          <String>Football Awayteam</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lElprOSPWVQ850hhIXmAhbh1pQk=8/4/2018 10:32:13 PM8/4/2018 10:31:16 PM</TimeStamp>
+        <ID>
+          <String>Dates</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7fAVhyW6DAX8N+MLfXO8Sz+jpwA=8/4/2018 10:37:02 PM8/4/2018 10:31:16 PM</TimeStamp>
+        <ID>
+          <String>Football Hometeam</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4WJJKenyPfQwdFSqIqI7zL9RDf4=8/4/2018 10:36:37 PM8/4/2018 10:31:16 PM</TimeStamp>
+        <ID>
+          <String>Football Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>L8L3ikqAc7TUYv//lKbT8Fgq2cE=8/4/2018 10:37:02 PM8/4/2018 10:31:16 PMhgcN4bcp2OrpxwR7gvHyZcLVx3Y=8/4/2018 10:31:17 PM8/4/2018 10:31:16 PM</TimeStamp>
+        <ID>
+          <String>International Football Results</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>aCoNbvQPX+araFnqzBzUWmNgBJQ=8/4/2018 10:21:11 PM8/4/2018 10:21:11 PM</TimeStamp>
+      <ID>
+        <String>FootbalDataCube</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-08-05T01:37:55.23Z</LastDeployed>
+</DeploymentSnapshot>
